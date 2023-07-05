@@ -16,7 +16,7 @@ do curl -vs localhost:8080;
 done
 
 # ReplcaSet의 my-app 컨테이너 이미지를 이전 버전(1.0)으로 변경 - 롤백 준비
-kubectl set image rs/myapp-replicaset my-app=my-app:1.0
+kubectl set image rs/myapp-replicaset yoonjeong/my-app=my-app:1.0
 
 # ReplicaSet과 Pod Template 확인 
 kubectl get rs myapp-replicaset -o wide 
